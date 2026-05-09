@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 카카오톡 공유 시 보여질 미리보기(썸네일/제목/설명) 설정 -->
+    <meta property="og:title" content="26년 소성회 경주 모임">
+    <meta property="og:description" content="60년 지기 소야 친구들의 경주 나들이에 초대합니다! (일시: 2026.05.16)">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600171221711-2e9ba420d4f6?q=80&w=800&auto=format&fit=crop">
+    <meta property="og:type" content="website">
+
+    <title>26년 소성회 경주 모임</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600&family=Pretendard:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .font-serif-kr { font-family: 'Noto Serif KR', serif; }
+        .font-sans-kr { font-family: 'Pretendard', sans-serif; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-stone-100 min-h-screen flex items-center justify-center sm:py-8 sm:px-4 font-serif-kr text-stone-800">
+
+    <!-- 메인 초대장 카드 컨테이너 (모바일에서는 화면 꽉 차게, PC/태블릿에서는 카드 형태로) -->
+    <div class="bg-white max-w-md w-full sm:shadow-xl sm:rounded-2xl overflow-hidden fade-in relative min-h-screen sm:min-h-0">
+        
+        <!-- 상단 이미지 영역 -->
+        <div class="relative h-72 sm:h-80 overflow-hidden flex items-center justify-center bg-stone-700">
+            <!-- 분위기 있는 경주 한옥 배경 이미지로 변경 -->
+            <img src="https://images.unsplash.com/photo-1600171221711-2e9ba420d4f6?q=80&w=800&auto=format&fit=crop" 
+                 alt="경주 한옥 배경 이미지" 
+                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 hover:scale-105">
+            <!-- 이미지 위에 어두운 오버레이 -->
+            <div class="absolute inset-0 bg-stone-900 bg-opacity-40"></div>
+            
+            <div class="relative z-10 text-center text-white p-4">
+                <p class="text-sm tracking-widest mb-3 uppercase font-sans-kr font-light">Invitation</p>
+                <h1 class="text-3xl sm:text-4xl font-semibold tracking-wide drop-shadow-md leading-tight">26년 소성회<br>경주 모임</h1>
+                <p class="text-sm mt-3 font-sans-kr font-light drop-shadow-md opacity-90">(일시: 2026.05.16)</p>
+            </div>
+        </div>
+
+        <!-- 본문 영역 -->
+        <div class="px-6 py-12 sm:px-8 text-center">
+            
+            <!-- 인사말 (친구분들 연령대를 고려하여 모바일 가독성을 높임 - 글자 크기/진하기/간격 증가) -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-semibold mb-8 text-stone-800">60년 지기, 소야 친구들에게</h2>
+                <p class="text-base sm:text-lg leading-loose text-stone-800 font-sans-kr font-medium">
+                    코흘리개 시절부터 함께해 온 <br>
+                    소야 불알 친구들아! <br><br>
+                    어느덧 60년 지기가 된 우리가 <br>
+                    옛 추억을 안고 경주로 나들이를 떠납니다. <br><br>
+                    그 시절 그 마음으로 돌아가 <br>
+                    함께 웃고 떠들며 즐거운 시간 보내고자 하니 <br>
+                    부디 한 분도 빠짐없이 참석해 주길 바랍니다.
+                </p>
+                <p class="mt-8 text-lg text-stone-900 font-bold">
+                    소성회  영호_총무
+                </p>
+            </div>
+
+            <!-- 구분선 -->
+            <div class="flex justify-center mb-8">
+                <div class="w-12 h-px bg-stone-300"></div>
+            </div>
+
+            <!-- 일시 및 장소 정보 -->
+            <div class="space-y-6 mb-10">
+                <div>
+                    <h3 class="text-xs text-stone-400 uppercase tracking-widest mb-2 font-sans-kr">When</h3>
+                    <p class="text-lg text-stone-700">2026.05.16<br>17:00까지 도착(가급적)</p>
+                </div>
+                <div>
+                    <h3 class="text-xs text-stone-400 uppercase tracking-widest mb-2 font-sans-kr">Where</h3>
+                    <p class="text-lg text-stone-700">경주 한옥마을휴영지</p>
+                    <p class="text-sm text-stone-500 mt-1 mb-5 font-sans-kr">주소: 경상북도 경주시 북군1길 11 (북군동 194-4)</p>
+                    
+                    <!-- 찾아오는 길 안내 및 지도 링크 -->
+                    <div class="bg-stone-50 p-5 rounded-xl border border-stone-200 mt-2">
+                        <h4 class="text-sm font-semibold text-stone-700 mb-2 font-sans-kr">찾아오는 길 안내</h4>
+                        <p class="text-xs text-stone-500 mb-4 font-sans-kr leading-relaxed">
+                            네비게이션 앱을 통해 정확한 길 안내를 받으실 수 있습니다.
+                        </p>
+                        
+                        <div class="flex flex-col gap-2">
+                            <!-- T-Map 앱 스킴 -->
+                            <a href="tmap://search?name=경주 한옥마을휴영지" 
+                               class="flex items-center justify-center w-full bg-white border border-stone-300 text-stone-700 py-2.5 px-4 rounded-lg text-sm font-sans-kr hover:bg-stone-100 transition shadow-sm">
+                                <svg class="w-4 h-4 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                T-Map으로 길찾기
+                            </a>
+                            
+                            <!-- 카카오맵 링크 -->
+                            <a href="https://map.kakao.com/link/search/경주 한옥마을휴영지" target="_blank"
+                               class="flex items-center justify-center w-full bg-[#FEE500] border border-[#FEE500] text-[#391B1B] py-2.5 px-4 rounded-lg text-sm font-sans-kr hover:bg-[#FDD800] transition shadow-sm">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3c-4.97 0-9 3.18-9 7.1 0 2.54 1.63 4.76 4.1 5.98-.13.45-.4 1.38-.45 1.55-.07.24.08.24.18.17.13-.1 1.76-1.18 2.5-1.7 1.13.3 2.37.47 3.67.47 4.97 0 9-3.18 9-7.1C21 6.18 16.97 3 12 3z"/></svg>
+                                카카오맵으로 길찾기
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
